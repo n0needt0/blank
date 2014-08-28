@@ -15,3 +15,27 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+/*
+Route::group(array('domain' => 'base.this.com'), function()
+{
+
+    Route::get('/', 'HomeController@showWelcome');
+
+    Route::controller('users', 'UserController');
+
+    Route::controller('verify', 'VerifyController');
+
+    Route::resource('groups', 'GroupController');
+
+    Route::controller('emd', 'EmdController');
+
+});
+
+Route::group(array('domain' => 'wb.this.com'), function()
+{
+    Route::get('/', 'WbController@getPage');
+    Route::get('/wb/{page?}', 'WbController@getPage');
+});
+
+**/
